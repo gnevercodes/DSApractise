@@ -1,4 +1,5 @@
-//
+// SINGLY LINKED LIST IMPLEMENTATION
+
 
 public class MyLinkedlist {
 
