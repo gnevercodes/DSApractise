@@ -4,7 +4,7 @@ public class customQueue {
     private int[] data;
     private static final int DEFAULT_SIZE = 10;  // creating a default size ; 
 
-    int end = -1; // ! a pointer to traverse 
+    int end = 0; // ! a pointer to traverse 
 
     public customQueue() { // if no size is given then we just call the second constructor with the default size 
         this(DEFAULT_SIZE);
@@ -27,7 +27,8 @@ public class customQueue {
         if (isFull()) {
             return false;
         }
-        data[end++] = item;
+        data[end] = item;
+        end++;
         return true;
     }
 
@@ -57,5 +58,11 @@ public class customQueue {
         }
         return data[0];
 
+    }
+
+    public void display() {
+        for (int i = 0; i < end; i++) {
+            System.out.println(data[i] + "");
+        }
     }
 }
