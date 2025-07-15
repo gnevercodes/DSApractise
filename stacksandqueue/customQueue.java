@@ -30,4 +30,32 @@ public class customQueue {
         data[end++] = item;
         return true;
     }
+
+    public int remove() throws Exception {
+        //edge case
+        if (isEmpty()) {
+            throw new Exception("queue is empty");
+
+        }
+        int removed = data[0];
+        // this is where we shift the data from 
+        // here in queue , the first part of data gets removed ; 
+        // so we remove it and shift the index left by 1 ; 
+        for (int i = 1; i < end; i++) {
+            data[i - 1] = data[i];
+
+        }
+        end--;
+        return removed;
+
+    }
+
+    public int front() throws Exception {
+        if (isEmpty()) {
+            throw new Exception("queue is empty");
+
+        }
+        return data[0];
+
+    }
 }
