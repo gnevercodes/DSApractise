@@ -21,7 +21,7 @@ public class dynamicStack extends customStack {
             data = temp;
         }
         // ? at this point we made sure array is not full by adding edge cases
-        return super.push(item);
+        return super.push(item); // insert it through main method . 
     }
 
 }

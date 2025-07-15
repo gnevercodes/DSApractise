@@ -2,7 +2,7 @@
 public class main {
 
     public static void main(String[] args) throws Exception {
-        dynamicStack stack = new dynamicStack(5);
+        customStack stack = new dynamicStack(5);
         stack.push(4);
         stack.push(5);
         stack.push(6);
