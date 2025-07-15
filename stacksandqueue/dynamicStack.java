@@ -2,14 +2,14 @@
 public class dynamicStack extends customStack {
 
     public dynamicStack() {
-        super();
+        super(); // it will call customStack 
     }
 
     public dynamicStack(int size) {
-        super(size);
+        super(size); // 
     }
 
-    @Override
+    @Override // overriding the element. 
     public boolean push(int item) {
         if (this.isFull()) {
             int[] temp = new int[data.length * 2];
