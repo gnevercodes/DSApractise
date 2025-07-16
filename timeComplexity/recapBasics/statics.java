@@ -8,6 +8,12 @@ public class statics {
         System.out.println(one.population);
         System.out.println(two.population);
 
+        statics three = new statics();
+        three.greeting(); // ! see here we are referencing a non-static in the static context by ?OBJECT Creation. 
+    }
+
+    void greeting() {
+
     }
 
 }
@@ -31,3 +37,8 @@ class Human {
 
 }
 // ? properties that are not related to the object
+/* * NOTES ON STATIC KEYWORD IN JAVA.
+ * we know that something which is not static , will be belonging to an object. 
+ * so we can't use "non-static" inside a "static."
+ * and you can call "static " inside of a "non-static"
+ */
