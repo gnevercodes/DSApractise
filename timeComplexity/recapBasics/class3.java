@@ -37,9 +37,11 @@ class Box {
     }
 
     Box(Box old) {
+        // super();
         this.h = old.h;
         this.l = old.l;
         this.w = old.w;
+
     }
 
 }
@@ -48,12 +50,10 @@ class BoxWeight extends Box {
 
     double weight;
 
-    public BoxWeight() {
-        this.weight = -1;
-    }
+    public BoxWeight(double l, double w, double h, double weight) {
+        super(l, w, h); // parent call must be first ? why child does care about parent class unlike reverse . 
+        this.weight = weight;
 
-    public BoxWeight(double l, double w, double h) {
-        super(l, w, h);
     }
 
 }
