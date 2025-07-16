@@ -1,3 +1,4 @@
+// ! ULTIMATE
 
 class link {
 

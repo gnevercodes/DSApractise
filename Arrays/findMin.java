@@ -8,7 +8,7 @@ public class findMin {
     }
 
     public static int minimumOfArray(int[] arr) {
-        int minimumCurrently = arr[0];
+        int minimumCurrently = arr[0]; // set anything and eventually if the number comes less than this , UPDATE
         for (int each : arr) {
             if (each < minimumCurrently) {
                 minimumCurrently = each; // UPDATE the min value. 
