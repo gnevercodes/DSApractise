@@ -1,5 +1,8 @@
 package timeComplexity.recapBasics;
 
+//package timeComplexity.recapBasics;
+// primitives are stored in stack . 
+// 
 public class basics {
 
     String name;
@@ -16,4 +19,5 @@ public class basics {
         this.name = name; // this naming convention is used when referring , assigning. 
         System.out.println(name);
     }
+    // final prevents content from being modified. 
 }
