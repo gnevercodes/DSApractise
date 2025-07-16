@@ -6,7 +6,7 @@ public class staticInitalization {
     static int b;
 
     static { // ! runs first only when the classes is loaded only for once. 
-        System.out.println("this loads up when it is loaded once?");
+        System.out.println("this loads up when it is compiled once?");
         b = a * 5;
     }
 
@@ -19,3 +19,7 @@ public class staticInitalization {
 
     }
 }
+/* 
+ * follow inner class method to gain good understanding of how static in inner classes works.
+ * works at class level stuff compile time. 
+ */
