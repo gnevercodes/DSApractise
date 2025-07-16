@@ -11,7 +11,7 @@ public class findMin {
         int minimumCurrently = arr[0];
         for (int each : arr) {
             if (each < minimumCurrently) {
-                minimumCurrently = each;
+                minimumCurrently = each; // UPDATE the min value. 
             }
 
         }
