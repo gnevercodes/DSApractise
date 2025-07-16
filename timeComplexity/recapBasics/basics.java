@@ -19,5 +19,6 @@ public class basics {
         this.name = name; // this naming convention is used when referring , assigning. 
         System.out.println(name);
     }
-    // final prevents content from being modified. 
+    // final prevents content from being modified. (only for primitive) we can do it but we cannot reassign it. 
+    // but it should be initialized when we are declaring a variable . 
 }
