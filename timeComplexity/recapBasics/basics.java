@@ -21,4 +21,5 @@ public class basics {
     }
     // final prevents content from being modified. (only for primitive) we can do it but we cannot reassign it. 
     // but it should be initialized when we are declaring a variable . 
+
 }
