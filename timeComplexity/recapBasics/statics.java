@@ -41,4 +41,6 @@ class Human {
  * we know that something which is not static , will be belonging to an object. 
  * so we can't use "non-static" inside a "static."
  * and you can call "static " inside of a "non-static"
+ *  when inner classes are there , outside classes can't be static
+ *  only inner can be static
  */

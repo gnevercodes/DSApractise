@@ -1,0 +1,21 @@
+package timeComplexity.recapBasics;
+
+public class staticInitalization {
+
+    static int a = 4;
+    static int b;
+
+    static { // ! runs first only when the classes is loaded only for once. 
+        System.out.println("this loads up when it is loaded once?");
+        b = a * 5;
+    }
+
+    public static void main(String[] args) {
+        staticInitalization one = new staticInitalization();
+        System.out.println(staticInitalization.a + " " + staticInitalization.b);
+
+        staticInitalization.b += 3;
+        System.out.println(staticInitalization.a + " " + staticInitalization.b);
+
+    }
+}
