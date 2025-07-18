@@ -41,3 +41,14 @@ OBJECT Class:
 - if we do and abstract methods inside doesn't have anything to perform which results in an error and hence that is why .
 - static methods can be created in abstract classes cause they can be called using the class name.
 - "abstract static methods" can't be created cause static methods cannot be overriden : doesn't make sense.
+
+| Interfaces |
+
+- can't create objects of interfaces
+- has only abstract methods.
+- variables are static , final .
+- interfaces cannot be initialized.
+- interfaces are not in the hierarchy .
+- they can be implemented for two different classes.
+- interaces does not care if two classes implementing this are related or not.
+- interfaces can be extended.

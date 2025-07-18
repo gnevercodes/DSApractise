@@ -11,8 +11,14 @@ abstract public class abstractInterfaces {
 
     abstract void partner(String name, int age);
 
+    // ! static normal method which is same everywhere. 
     static void something() {
         System.out.println("blah");
+    }
+
+    // ! normal methods
+    void normal() {
+        System.out.println("this is a normal");
     }
 
 }
