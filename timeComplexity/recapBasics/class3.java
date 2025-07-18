@@ -53,7 +53,6 @@ class BoxWeight extends Box {
     public BoxWeight(double l, double w, double h, double weight) {
         super(l, w, h); // parent call must be first ? why child does care about parent class unlike reverse . 
         this.weight = weight;
-
     }
 
 }
