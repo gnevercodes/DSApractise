@@ -22,7 +22,8 @@ public class access {
     }
 
     public static void main(String[] args) {
-
+        access one = new access();
+        System.out.println(one instanceof Object);
     }
 
     @Override
