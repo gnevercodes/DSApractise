@@ -5,7 +5,7 @@ public class class3 {
     public static void main(String[] args) {
         Box box = new Box(4);
         System.out.println(box.l + " " + box.w + " " + box.h);
-        BoxWeight box2 = new BoxWeight();
+        BoxWeight box2 = new BoxWeight(4, 4, 4, 4);
         System.out.println(box2.h + " " + box2.weight);
     }
 
