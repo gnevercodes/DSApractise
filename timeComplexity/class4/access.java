@@ -21,4 +21,13 @@ public class access {
         this.name = name;
     }
 
+    public static void main(String[] args) {
+
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+    }
+
 }
