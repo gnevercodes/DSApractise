@@ -29,3 +29,15 @@ OBJECT Class:
 - hashcode : a unique representation of a number for a obj. random integer value for a obj
 - .equals() : it checks
 - == checks if both references point to the same obj or not
+
+| Abstract Class |
+
+- abstract methods gives us a template.
+  child class must override this thing.
+  ! must override it.
+  class must be declared "abstract" if it has a method has "abstract" methods.
+
+- can't create objects of an abstract classes.
+- if we do and abstract methods inside doesn't have anything to perform which results in an error and hence that is why .
+- static methods can be created in abstract classes cause they can be called using the class name.
+- "abstract static methods" can't be created cause static methods cannot be overriden : doesn't make sense.
