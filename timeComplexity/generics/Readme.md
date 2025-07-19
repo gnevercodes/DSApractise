@@ -10,6 +10,7 @@
 
 1. linear TC.
 2. takes only wrapper classes.
+
 - [*] work on generics
 
 ## Comparable
@@ -23,7 +24,3 @@
 - [*] get a hang of it.
 
 ##
-| Name | Role |
-|------|------|
-| Ganesh | Full-Stack Dev |
-| ChatGPT | Your wingman |
