@@ -23,3 +23,7 @@
 - [*] get a hang of it.
 
 ##
+| Name | Role |
+|------|------|
+| Ganesh | Full-Stack Dev |
+| ChatGPT | Your wingman |
