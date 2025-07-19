@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class customArrayList {
 
-    private int data[];
+    private int[] data;
     private static int DEFAULT_SIZE = 10;
     private int size = 0; // also works as index value. 
 
@@ -59,7 +59,7 @@ public class customArrayList {
     // }
     public void display() {
         System.out.print("[");
-        for (int i : data.length) {
+        for (int i : data) {
             System.out.print(data[i] + ",");
         }
     }
