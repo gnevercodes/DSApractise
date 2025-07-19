@@ -30,3 +30,9 @@ a. so instead of doing the " new " keyword to create new object.
 b. we will be doing clone
 c. this is a method in lang
 d. This is a interface.
+
+shallow copy : partial copy
+primitives are copied
+objects are linked via reference variable.
+
+Deep copy : we basically make sure we do not point the obj reference variables to another one.
