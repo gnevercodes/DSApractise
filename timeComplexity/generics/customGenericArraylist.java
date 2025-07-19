@@ -8,11 +8,9 @@ public class customGenericArrayList<T> {
     private static int DEFAULT_SIZE = 10;
     private int size = 0; // also works as index value. 
 
-    public customArrayList() {
-        this.data = new Object[DEFAULT_SIZE];
-
-    }
-
+    // public customArrayList() {
+    //     this.data = new Object[DEFAULT_SIZE];
+    // }
     public void add(T num) {
         // add edge case
         if (this.isFull()) {
@@ -28,7 +26,7 @@ public class customGenericArrayList<T> {
     private void resize() {
         Object[] temp = new Object[data.length * 2];
         for (int i = 0; i < data.length; i++) {
-            temp[i] = (T)data[i];
+            temp[i] = (T) data[i];
         }
         data = temp; // temp is garbage collection . 
     }
@@ -57,13 +55,12 @@ public class customGenericArrayList<T> {
     //     }
     //     System.out.println("]");
     // }
-    public void display() {
-        System.out.print("[");
-        for (int i : data) {
-            System.out.print(data[i] + ",");
-        }
-    }
-
+    // public void display() {
+    //     System.out.print("[");
+    //     for (int i : data) {
+    //         System.out.print(data[i] + ",");
+    //     }
+    // }
     public static void main(String[] args) {
         customArrayList list = new customArrayList();
 
