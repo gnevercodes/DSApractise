@@ -11,3 +11,8 @@
 1. linear TC.
 2. takes only wrapper classes.
    [*] work on generics
+
+## Comparable
+
+1. interface Comparable<Object>
+2. it has method compareTo method to be overridden.
