@@ -9,4 +9,5 @@
 ## Arraylist
 
 1. linear TC.
-2.
+2. takes only wrapper classes.
+   [*] work on generics
