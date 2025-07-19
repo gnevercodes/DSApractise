@@ -23,4 +23,10 @@
 
 - [*] get a hang of it.
 
-##
+## Object cloning.
+
+we can save process time
+a. so instead of doing the " new " keyword to create new object.
+b. we will be doing clone
+c. this is a method in lang
+d. This is a interface.
