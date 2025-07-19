@@ -10,7 +10,7 @@
 
 1. linear TC.
 2. takes only wrapper classes.
-   [*] work on generics
+- [*] work on generics
 
 ## Comparable
 
@@ -20,6 +20,6 @@
 
 ## lambda
 
-[*] get a hang of it.
+- [*] get a hang of it.
 
 ##
