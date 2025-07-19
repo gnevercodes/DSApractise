@@ -17,3 +17,7 @@
 1. interface Comparable<Object>
 2. it has method compareTo method to be overridden.
 3. generics must be added on which one you're comparing
+
+## lambda
+
+[*] get a hang of it.
