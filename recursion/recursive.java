@@ -2,10 +2,15 @@
 class recursive {
 
     public static void main(String[] args) {
-        message();
+        print(1);
     }
 
-    static void message() {
-        System.out.println("hello world");
+    static void print(int n) {
+        if (n == 5) { // # add check aka BASE condition. 
+            return;
+        }
+        System.out.println(n);
+        print(n + 1);
     }
+
 }
