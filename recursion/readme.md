@@ -10,3 +10,14 @@
 4. add `check**`.
 5. `base condition - simple if condtion`.
 6. This checks if the future code must be exectued or not .
+7. even though the same func is called again , this is treated as a seperate memory in the stack and it must be completed to return to the original func that called this func.
+
+### why recursion?
+
+> it helps us in solving complex probls in a simple way.
+> you can convert recursion solution into iterations and vice versa.
+
+### when to use recursion :
+
+1. space complexity is not constant because of recursive calls.
+2. breaking bigger probs into smaller problems.
