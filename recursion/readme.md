@@ -21,3 +21,7 @@
 
 1. space complexity is not constant because of recursive calls.
 2. breaking bigger probs into smaller problems.
+
+#### how to get good at recursion:
+
+` visualize them`.
