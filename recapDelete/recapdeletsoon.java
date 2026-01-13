@@ -1,15 +1,32 @@
-package recapDelete;
 
-import java.util.*;
+abstract class recapdeletsoon {
 
-public class recapdeletsoon {
+    abstract public void makeNoise();
 
-    public static void main(String[] args) {
-        ArrayList<Integer> one = new ArrayList<Integer>();
-        /* arraylist takes only objects dumbo */
-        one.add(4);
-        Boolean isIn = one.contains(4);
-        System.out.println(isIn);// Autoboxing: int 4 is automatically converted to Integer 
+    abstract public void eat(); // these exist solely for polymorphism . 
 
+    abstract public String sound();
+
+    public void normalMethod() {
+        System.out.println(" non abstract classes can too exist");
     }
 }
+
+class Dog extends recapdeletsoon {
+
+    @Override
+    public void makeNoise() {
+        System.out.println(" woof ");
+    }
+
+    @Override
+    public void eat() {
+        System.out.println("eats dog food");
+    }
+
+    @Override
+    public String sound() {
+        return "barks";
+    }
+}
+
