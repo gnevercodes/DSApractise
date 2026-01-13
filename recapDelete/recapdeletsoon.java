@@ -1,32 +1,14 @@
 
-abstract class recapdeletsoon {
+class recapdeletsoon {
 
-    abstract public void makeNoise();
+    public static void main(String[] args) {
 
-    abstract public void eat(); // these exist solely for polymorphism . 
+    }
 
-    abstract public String sound();
+    public void one() {
+        int[] nums = new int[7];
+        nums[0] = 1;
+        // arrays are objects . 
 
-    public void normalMethod() {
-        System.out.println(" non abstract classes can too exist");
     }
 }
-
-class Dog extends recapdeletsoon {
-
-    @Override
-    public void makeNoise() {
-        System.out.println(" woof ");
-    }
-
-    @Override
-    public void eat() {
-        System.out.println("eats dog food");
-    }
-
-    @Override
-    public String sound() {
-        return "barks";
-    }
-}
-
