@@ -1,100 +1,22 @@
 
+import java.util.ArrayList;
+
 public class newone {
 
-    // inheritence
     public static void main(String[] args) {
-        Animal[] animals = new Animal[5];// this is just array .
-        animals[0] = new Tiger();
-        animals[0].eat();
-        vet one = new vet();
-        // one.giveFluShot(animals);
-    }
-}
+        int i = 288;
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        list.add(i);
+        Integer d = Integer.valueOf(33);
+        d++;
 
-abstract class Animal {
+        String s = "2";
+        int x = Integer.parseInt(s);
 
-    String food;
-    Boolean hungry;
-    String location;
+        double q = Double.parseDouble("232.33");
 
-    public void makeNoise() {
-
-    }
-
-    public void eat() {
-        //eating
-    }
-
-    public void roam() {
-
-    }
-}
-
-class Feline extends Animal {
-
-    public void roam() {
-    }
-
-}
-
-class Lion extends Feline {
-
-    @Override
-    public void makeNoise() {
-
-    }
-
-    @Override
-    public void eat() {
-        super.eat();
-        // do your stuff here then again
-        System.out.println("eat here");
-    }
-}
-
-class Tiger extends Feline {
-
-    @Override
-    public void makeNoise() {
-
-    }
-
-    @Override
-    public void eat() {
-        // eating
-        System.out.println("eating");
-    }
-}
-
-class Canine extends Animal {
-
-    public void roam() {
-        // idk roams in a strange way ig;///
-    }
-}
-
-class wolf extends Canine {
-
-    @Override
-    public void makeNoise() {
-        // 
-    }
-
-    public void eat() {
-        System.out.println("eat");
-    }
-}
-
-class vet extends Object {
-
-    public void giveFluShot(Animal a) {
-        // gives a flue shot 
-        System.out.println("animal's recieving a flu shot");
-    }
-
-    @Override
-    public String toString() {
-        return getClass().getName() + "@" + Integer.toHexString(hashCode());
+        String t = "two";
+        int y = Integer.parseInt(t);
 
     }
 }
