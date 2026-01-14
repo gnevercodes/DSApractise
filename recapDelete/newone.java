@@ -3,15 +3,15 @@ public class newone {
 
     // inheritence
     public static void main(String[] args) {
-        Animal[] animals = new Animal[5];
+        Animal[] animals = new Animal[5];// this is just array .
         animals[0] = new Tiger();
         animals[0].eat();
         vet one = new vet();
-        one.giveFluShot(animals[0]);
+        // one.giveFluShot(animals);
     }
 }
 
-class Animal {
+abstract class Animal {
 
     String food;
     Boolean hungry;
@@ -85,10 +85,16 @@ class wolf extends Canine {
     }
 }
 
-class vet {
+class vet extends Object {
 
     public void giveFluShot(Animal a) {
         // gives a flue shot 
         System.out.println("animal's recieving a flu shot");
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getName() + "@" + Integer.toHexString(hashCode());
+
     }
 }
