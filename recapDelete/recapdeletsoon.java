@@ -29,7 +29,7 @@ class GoodDog {
 class recapdeletsoon {
 
     public static void main(String[] args) {
-<<<<<<< HEAD
+         << << << < HEAD
         
     }
 
@@ -37,8 +37,8 @@ class recapdeletsoon {
         int[] nums = new int[7];
         nums[0] = 1;
         // arrays are objects . 
-=======
-        GoodDog one = new GoodDog();
+         == == ==
+                = GoodDog one = new GoodDog();
         one.setSize(70);
         GoodDog two = new GoodDog();
         two.setSize(8);
@@ -51,7 +51,9 @@ class recapdeletsoon {
 
         int theOGSize = list.size();
         System.out.println(theOGSize);
->>>>>>> 043b9f4 (catching up)
+         >>> >>> > 043
+        b9f4(catching up
+        )
 
         boolean isthere = list.contains(one);
         System.out.println(isthere);
