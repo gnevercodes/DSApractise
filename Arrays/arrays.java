@@ -30,9 +30,8 @@ public class arrays {
             str[i] = in.next();
 
         }
-        in.close();
-        // string are immutable , arrays are mutable. 
 
+        // string are immutable , arrays are mutable. 
         // 2D arrays 
         int[][] twoarr = {
             {1, 2, 3},
@@ -49,13 +48,13 @@ public class arrays {
             }
             System.out.println();
         }
-        in.close();
+
         for (int row = 0; row < twoarr.length; row++) {
             System.out.println(Arrays.toString(twoarr[row]));
         }
         for (int[] a : twoarr) {
             System.out.println(Arrays.toString(a));
         }
-
+        in.close();
     }
 }
