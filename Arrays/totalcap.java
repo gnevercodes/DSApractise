@@ -30,4 +30,27 @@ public class totalcap {
         return minimulvalue;
 
     }
+
+    public static boolean linearSearch(int[] arr, int start, int end, int target) {
+        for (int index = start; index <= end; index++) {
+            int element = arr[index];
+            if (element == target) {
+                return true;
+            }
+
+        }
+        return false;
+    }
+
+    public static boolean searchInString(String str, char target) {
+        if (str.length() == 0) {
+            return false;
+        }
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == target) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
