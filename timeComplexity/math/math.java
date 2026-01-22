@@ -45,5 +45,5 @@ Math.abs() returns the same type as its input (e.g., int for int, double for dou
 Math.max() and Math.min() return the same type as their inputs.
 Math.round() returns long for double input or int for float.
 Math.floorDiv() returns int or long depending on input types.
-In your code, methods like Math.floor(), Math.random(), Math.exp(), etc., return double, but that's specific to those functions. Always check the method signature for the exact return type.
+
  */
