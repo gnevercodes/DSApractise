@@ -1,15 +1,13 @@
 package timeComplexity.enums;
-
-public enum enumsrm { // 
-    HIGH,
-    LOW,
-    MEDIUM // like a class file , this is a enum file. 
-}
+// we cant do a new on the enum class. 
 
 class now {
 
     public static void main(String[] args) {
-        enumsrm one = new enumsrm();
+        DaysofTheWeek day = DaysofTheWeek.friday;
 
+        for (DaysofTheWeek myday : DaysofTheWeek.values()) {
+            System.out.println(myday);
+        }
     }
 }
