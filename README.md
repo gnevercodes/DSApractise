@@ -28,4 +28,4 @@ a github where i sharpen my dsa skills .
 9. **Garbage Collection (GC):** Objects with no references become eligible; GC runs automatically at JVM’s discretion.
 
 10. **Inheritance Execution Order:**  
-    Parent static vars → Child static vars → Parent instance vars → Parent constructor → Child instance vars → Child constructor
+    Parent static vars → Child static vars → Parent instance vars → Parent constructor → Child instance vars → Child constructor in order
