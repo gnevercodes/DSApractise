@@ -26,3 +26,6 @@ public class stringBuilders {
          */
     }
 }
+/*	•	Strings → immutable → safe for multi-threading.
+	•	StringBuilder → mutable → not thread-safe, fast for single-threaded modifications.
+	•	StringBuffer → mutable, thread-safe (slightly slower than StringBuilder). */
