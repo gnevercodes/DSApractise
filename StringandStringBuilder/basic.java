@@ -8,7 +8,7 @@ public class basic {
         // points to the same . 
         // String is a class; 
         // capital letter is a class.
-        // every string created is a type of object.
+        //          
         /* 
          * String name= "ganesh"
          * stored as a string pool 
@@ -32,3 +32,18 @@ public class basic {
         System.out.println(name.charAt(0));
     }
 }
+/*
+*  String Literal vs new String()
+* Case 1: String Literal
+* ✔ Stored in String Constant Pool (SCP)
+✔ Java reuses existing strings
+✔ Memory efficient
+✔ Faster
+✔ Most common in real projects
+
+!  Case 2: Using new
+* ✔ Always creates a NEW object in Heap memory
+✔ Even if "ganesh" already exists
+✔ Less memory efficient
+✔ Rarely needed in real code
+ */
