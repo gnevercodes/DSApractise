@@ -29,3 +29,31 @@ a github where i sharpen my dsa skills .
 
 10. **Inheritance Execution Order:**  
     Parent static vars → Child static vars → Parent instance vars → Parent constructor → Child instance vars → Child constructor in order
+
+```
+Iterable
+ └── Collection
+      ├── List
+      │    ├── ArrayList
+      │    └── LinkedList
+      ├── Set
+      │    ├── HashSet
+      │    └── TreeSet
+      └── Queue
+           ├── PriorityQueue
+           └── Deque
+
+Map
+ ├── HashMap
+ ├── TreeMap
+ └── LinkedHashMap
+
+```
+
+1. Arrays [ ]
+2. Strings [ ]
+3. HashMap / HashSet [ ]
+4. Stack & Queue [ ]
+5. Linked List [ ]
+6. Trees (BST, Heap) [ ]
+7. Graphs (basic BFS/DFS) [ ]
