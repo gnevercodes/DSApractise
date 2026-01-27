@@ -31,6 +31,7 @@ a github where i sharpen my dsa skills .
     Parent static vars → Child static vars → Parent instance vars → Parent constructor → Child instance vars → Child constructor in order
 
 ```
+      |-Array
 Iterable
  └── Collection
       ├── List
@@ -57,3 +58,9 @@ Map
 5. Linked List [ ]
 6. Trees (BST, Heap) [ ]
 7. Graphs (basic BFS/DFS) [ ]
+
+## Arrays
+
+- Linear Search
+- Binary Search
+- Order agnostic binary search
