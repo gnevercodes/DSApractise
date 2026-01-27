@@ -5,13 +5,13 @@ public class linearSearch {
         // Linear Search
         // Start from start and search untill you find . 
         int[] nums = {2, 33, 445, 12, 134, 18, 100};
-        boolean ans = linearSearch(nums, 22);
+        boolean ans = linearSearch1(nums, 22);
         System.out.println("target found at index " + ans);
 
     }
 
     // Searching : return the index if the item is found ; 
-    public static boolean linearSearch(int[] arr, int target) {
+    public static boolean linearSearch1(int[] arr, int target) {
         if (arr.length == 0) { // return will come out of the function . 
             return false;
         }

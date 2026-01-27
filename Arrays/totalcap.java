@@ -1,56 +1,46 @@
 
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class totalcap {
 
-    public static void main(String[] args) {
-        int[] arraynew = new int[5];
-        Scanner newone = new Scanner(System.in);
+    public static void main(String[] args) throws Exception {
+        int[] aray = {1, 2, 3, 4, 5, 6, 7, 78, 88, 99};
+        int target = 4;
 
-        for (int i = 0; i < 5; i++) {
-            arraynew[i] = newone.nextInt();
-
+        int indexLocation = binary(aray, target); // given a static; 
+        int indexLocation1 = linear(aray, target);
+        System.out.println(indexLocation);
+        System.out.println(indexLocation1);
+        if (indexLocation == -1) {
+            System.out.println("index not found");
+        } else {
+            System.out.println("index found at loction:" + indexLocation);
         }
-        System.out.println(Arrays.toString(arraynew));
-
-        System.out.println(FindMinValue(arraynew));
-        System.out.println(Integer.MAX_VALUE);
 
     }
 
-    public static int FindMinValue(int[] arr) {
-        int minimulvalue = arr[0];
+    public static int binary(int[] arr, int target) {
+        int start = 0;
+        int end = arr.length - 1;
 
-        for (int each : arr) {
-            if (each < minimulvalue) {
-                minimulvalue = each;
+        while (start <= end) {
+            int middle = start + (end - start) / 2;
+            if (arr[middle] < target) {
+                start = middle + 1;
+            } else if (target < arr[middle]) {
+                end = middle - 1;
+            } else {
+                return middle;
             }
         }
-        return minimulvalue;
-
+        return -1;
     }
 
-    public static boolean linearSearch(int[] arr, int start, int end, int target) {
-        for (int index = start; index <= end; index++) {
-            int element = arr[index];
-            if (element == target) {
-                return true;
-            }
+    public static int linear(int[] arr, int target) {
 
-        }
-        return false;
-    }
-
-    public static boolean searchInString(String str, char target) {
-        if (str.length() == 0) {
-            return false;
-        }
-        for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == target) {
-                return true;
+        for (int i : arr) {
+            if (arr[i] == target) {
+                return i;
             }
         }
-        return false;
+        return -1; // this part never exists if found ; 
     }
 }
