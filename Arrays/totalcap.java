@@ -1,46 +1,24 @@
 
 public class totalcap {
 
-    public static void main(String[] args) throws Exception {
-        int[] aray = {1, 2, 3, 4, 5, 6, 7, 78, 88, 99};
-        int target = 4;
-
-        int indexLocation = binary(aray, target); // given a static; 
-        int indexLocation1 = linear(aray, target);
-        System.out.println(indexLocation);
-        System.out.println(indexLocation1);
-        if (indexLocation == -1) {
-            System.out.println("index not found");
-        } else {
-            System.out.println("index found at loction:" + indexLocation);
+    public static void main(String[] args) {
+        int[][] variable2 = new int[][]{{1, 2, 3, 3}, {4, 5, 6, 9}};
+        int target = 2;
+        int[] result = twoDimensions(variable2, target);
+        for (int i = 0; i < result.length - 1; i++) {
+            System.out.println(result[i]);
         }
 
     }
 
-    public static int binary(int[] arr, int target) {
-        int start = 0;
-        int end = arr.length - 1;
-
-        while (start <= end) {
-            int middle = start + (end - start) / 2;
-            if (arr[middle] < target) {
-                start = middle + 1;
-            } else if (target < arr[middle]) {
-                end = middle - 1;
-            } else {
-                return middle;
+    public static int[] twoDimensions(int[][] arrs, int target) {
+        for (int row = 0; row < arrs.length; row++) {
+            for (int col = 0; col < arrs[row].length; col++) {
+                if (arrs[row][col] == target) {
+                    return new int[]{row, col};
+                }
             }
         }
-        return -1;
-    }
-
-    public static int linear(int[] arr, int target) {
-
-        for (int i : arr) {
-            if (arr[i] == target) {
-                return i;
-            }
-        }
-        return -1; // this part never exists if found ; 
+        return new int[]{-1, -1};
     }
 }
