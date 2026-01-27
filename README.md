@@ -51,16 +51,10 @@ Map
 
 ```
 
-1. Arrays [ ]
+1. Arrays [X]
 2. Strings [ ]
 3. HashMap / HashSet [ ]
 4. Stack & Queue [ ]
 5. Linked List [ ]
 6. Trees (BST, Heap) [ ]
 7. Graphs (basic BFS/DFS) [ ]
-
-## Arrays
-
-- Linear Search
-- Binary Search
-- Order agnostic binary search
