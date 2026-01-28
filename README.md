@@ -58,6 +58,6 @@ Map
 3. ArrayList [X] - custom implementation , generic todo
 4. HashMap / HashSet [ ]
 5. Stack & Queue [ ]
-6. Linked List [ ]
+6. Linked List [X] - single LL[X],doubly[ ],circular[ ] .
 7. Trees (BST, Heap) [ ]
 8. Graphs (basic BFS/DFS) [ ]
