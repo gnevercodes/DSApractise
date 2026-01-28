@@ -51,10 +51,13 @@ Map
 
 ```
 
+## TODO:
+
 1. Arrays [X]
 2. Strings [X]
-3. HashMap / HashSet [ ]
-4. Stack & Queue [ ]
-5. Linked List [ ]
-6. Trees (BST, Heap) [ ]
-7. Graphs (basic BFS/DFS) [ ]
+3. ArrayList [X] - custom implementation , generic todo
+4. HashMap / HashSet [ ]
+5. Stack & Queue [ ]
+6. Linked List [ ]
+7. Trees (BST, Heap) [ ]
+8. Graphs (basic BFS/DFS) [ ]
