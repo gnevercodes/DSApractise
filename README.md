@@ -52,7 +52,7 @@ Map
 ```
 
 1. Arrays [X]
-2. Strings [ ]
+2. Strings [X]
 3. HashMap / HashSet [ ]
 4. Stack & Queue [ ]
 5. Linked List [ ]

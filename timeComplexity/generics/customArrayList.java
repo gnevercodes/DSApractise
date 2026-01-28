@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class customArrayList {
 
-    private int[] data;
-    private static int DEFAULT_SIZE = 10;
+    private int[] data; // this is an array here. 
+    private final static int DEFAULT_SIZE = 10; // static default size. 
     private int size = 0; // also works as index value. 
 
     public customArrayList() {
@@ -18,11 +18,15 @@ public class customArrayList {
         if (this.isFull()) {
             resize(); // these two methods are edge cases . 
         }
-        data[size++] = num;
+        data[size++] = num; // * post increment 
+        /*
+        data[size]= num; 
+        size+=1; 
+         */
     }
 
     private boolean isFull() {
-        return size == data.length;
+        return size == data.length; // returns a boolean if full:TRUE,not full:FALSE
     }
 
     private void resize() {
@@ -62,6 +66,7 @@ public class customArrayList {
         for (int i : data) {
             System.out.print(data[i] + ",");
         }
+        System.out.println("]");
     }
 
     public static void main(String[] args) {
