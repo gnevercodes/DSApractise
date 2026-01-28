@@ -1,0 +1,49 @@
+## hashmap
+
+### hashcode
+
+1. Object class this belongs to
+2. the hash value of a number is number itself.
+
+## general idea:
+
+1. The values inserted are converted into **hashcode** and then inserted into the array(say).
+2. But **hashcode** gives us big number which is not good.
+3. THen **hashing** comes into place which reduces the value into simpler values which are then put into array.
+4. Hashcode takes O(1) complexity.
+5. `collision` can also occur in Hashmap (mulitple hash values are same which collide to be in the place).
+
+## 2 ways to reduce collision
+
+1.  Chaining
+2.  Open addressing
+
+- Chaining :
+
+1. Here, the same keys are being created as Linkedlist (whole point of HashMap is gone).
+2. worst case : all the values are then at the same key.
+3. We keep on adding to the same plaace which then creates 'traversing'.
+
+> solution : we try to cheat by using `simple uniform hashing`
+> Assumption : **every key is equally likely to every slot in the table**.
+
+```
+n = no of keys
+m = size of table.
+load factor : alpha = n/m = expected number of keys per slot.
+
+total TC : O(1+alpha) assuming alpha for LL .
+
+Hash Function :
+1. Division Method h(k)=k%m ; m = size of array,m can be taken as prime also .
+2. Multiplication methond : h(k) = [(a.k)% 2^w]>>(w-r) a:random w:bits in k ,m:2^r ; popular.
+3. Universal Hashing : h(k) = [(ak+b)%p]%m ; a,b:random ,
+```
+
+## how large should the array / table should be ?
+
+> size of table should be m = Theta(n) ;
+
+1. big : wasteful
+2. small : slow
+3. general idea : Start small and grow.
