@@ -74,3 +74,5 @@ boolean b = sc.nextBoolean();// true / false
 String s = sc.next();         // single word
 String line = sc.nextLine();  // full line
 ```
+
+- basics covered.
