@@ -46,4 +46,20 @@ Hash Function :
 
 1. big : wasteful
 2. small : slow
-3. general idea : Start small and grow.
+3. general idea : Start small and grow. if table is small , full : **double and add all items**.O(n) TC.
+4. Shrinking is also done .
+
+- `Open Addressing`
+
+1. only one item per slot.
+2. hash function tries to probe and try to find empty slots , we look at the next possible item and insert .
+
+probing Strategies:
+
+- linear probing. problem : clustering.
+- Double Hashing : (hash1 + i \* hash2)%m ;
+
+## when to use which method :
+
+1. Opem addressing : better cache perf
+2. chaining : less sensitive to hashfunction.
