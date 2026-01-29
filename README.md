@@ -31,21 +31,21 @@ a github where i sharpen my dsa skills .
     Parent static vars → Child static vars → Parent instance vars → Parent constructor → Child instance vars → Child constructor in order
 
 ```
-      |-Array
+      |-Array[X]
 Iterable
  └── Collection
       ├── List
-      │    ├── ArrayList
-      │    └── LinkedList
+      │    ├── ArrayList[X]
+      │    └── LinkedList[X]
       ├── Set
-      │    ├── HashSet
+      │    ├── HashSet[X]
       │    └── TreeSet
       └── Queue
            ├── PriorityQueue
            └── Deque
 
 Map
- ├── HashMap
+ ├── HashMap [X]
  ├── TreeMap
  └── LinkedHashMap
 
