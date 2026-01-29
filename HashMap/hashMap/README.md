@@ -63,3 +63,46 @@ probing Strategies:
 
 1. Opem addressing : better cache perf
 2. chaining : less sensitive to hashfunction.
+
+```java
+private transient HashMap<E,Object> map; // internal implemenation.
+private static final Object PRESENT = new Object();
+
+HashSet<String> set = new HashSet<>();
+set.add("Java");
+set.add("Python");
+set.add("Java"); // duplicate
+
+
+map.put("Java", PRESENT);
+map.put("Python", PRESENT);
+map.put("Java", PRESENT); // overwrites → no duplicate
+```
+
+## Array + Bucket Concept of Hashmap and HashSet
+
+1. Hashmap is basically an array of buckets.
+2. each index of any array is called a bucket.
+3. map.put("Java", 1); for this.
+4. Call hashCode() on key (internally).
+5. Convert hash to index
+6. Go to that bucket (array index)
+   7 . place : a bucket can contain NODE,LINKEDLIST(Collsion),red-black Tree(Many Collisions).
+
+```
+Array (table)
+Index 0 → null
+Index 1 → Node → Node → Node   (LinkedList)
+Index 2 → Node
+Index 3 → TreeNode (Red-Black Tree)
+```
+
+## hashcode vs equals()
+
+- hashcode()
+  - returns int,used to find index of bucket.
+  - fast.
+  - no guarantee in uniqueness.
+- equalus()
+  - slow , compares actual content, final for equal check.
+    -Same hashCode() ≠ equals true (collision allowed)
