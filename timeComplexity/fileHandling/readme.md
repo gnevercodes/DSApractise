@@ -34,6 +34,17 @@
 ### predefined streams in java
 
 1. system.out == standard output stream = console
-2. system.in == standard output stream = keyboard.
+2. system.in == standard input stream = keyboard.
 3. system.err == error str == console.
-4.
+
+## how i/o operations actually work:
+
+> [soucre] -> [Program] -> [Destination] .
+
+## inputstream, outputstream , reader ,writer.
+
+> Source ----> InputStream / Reader -----> Program
+
+> program --> OutputStream / writer --> Destination .
+
+![I/0 class Overview table](sc.png)
