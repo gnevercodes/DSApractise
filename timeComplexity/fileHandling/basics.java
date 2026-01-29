@@ -1,6 +1,7 @@
 package timeComplexity.fileHandling;
 
 import java.io.*;
+// this methods are character based inputs and outputs. 
 
 public class basics {
 

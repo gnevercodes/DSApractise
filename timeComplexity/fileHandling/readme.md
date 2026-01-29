@@ -48,3 +48,5 @@
 > program --> OutputStream / writer --> Destination .
 
 ![I/0 class Overview table](sc.png)
+
+> Source → Stream → Program → Stream → Destination
