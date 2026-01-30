@@ -25,3 +25,6 @@ public class dynamicStack extends customStack {
     }
 
 }
+/*
+* OOps principles are being covered here majorly : Inheritence, Abstraction,
+*/

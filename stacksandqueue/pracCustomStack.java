@@ -1,6 +1,5 @@
 
 import java.util.*;
-import java.util.Queue;
 
 public class pracCustomStack {
 
@@ -14,5 +13,7 @@ public class pracCustomStack {
         Queue<Integer> two = new LinkedList<>();
         two.add(3);
         System.out.println(two.peek());
+
+        Deque<Integer> three = new ArrayDeque<>();
     }
 }

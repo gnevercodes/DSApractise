@@ -12,7 +12,7 @@ public class customStack {
     int ptr = -1; // ! creating a pointer to traverse and insert elements.
 
     public customStack() {
-        this(DEFAULT_SIZE); // this calls the below method only , with a custom default size; 
+        this(DEFAULT_SIZE); // this calls the below method only , with a custom default size; a use case of this is defined here. 
     }
 
     public customStack(int size) {
@@ -23,7 +23,7 @@ public class customStack {
 
     public boolean push(int item) {
         if (isFull()) {
-            System.out.println("stack is full");
+            System.out.println("stack is full");//edge case
             return false;
 
         }
