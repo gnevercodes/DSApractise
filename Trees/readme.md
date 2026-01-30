@@ -48,4 +48,19 @@ class Node{
 7. Leaf Nodes : edge nodes.
 8. Level : difference between two nodes.
 9. ancestor , descendant.
-10.
+
+## Types of Binary Tree.
+
+1. _Complete Binary Tree_ : All levels are filled apart from last level , which is filled from left to right.
+2. **Full Binary Tree** : each nodes has zero or two children .
+3. **perfect Binary tree** : all the levels are filled.
+4. Height balanced .
+5. Skewed Binary Tree. every node has only one child. height : O(n) like LL.
+6. Ordered Binary Tree : every node has some property .
+
+## Properties: (INTERVIEWS)
+
+1. total no of nodes in a perfect binary tree for height h : 2^(h+1) -1 ;
+2. if level=i ; then nodes : 2^i
+3. total leaf nodes in PBT : 2^h ;
+4. N=no of leaves , log(n+1) levels atleast.
