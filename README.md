@@ -40,7 +40,7 @@ Iterable
       ├── Set
       │    ├── HashSet[X]
       │    └── TreeSet
-      └── Queue
+      └── Queue[X]
            ├── PriorityQueue
            └── Deque
 
@@ -56,8 +56,8 @@ Map
 1. Arrays [X]
 2. Strings [X]
 3. ArrayList [X] - custom implementation , generic todo
-4. HashMap / HashSet [ ]
-5. Stack & Queue [ ]
+4. HashMap / HashSet [X]
+5. Stack & Queue [X] - // TODO: Circular.
 6. Linked List [X] - single LL[X],doubly[ ],circular[ ] .
 7. Trees (BST, Heap) [ ]
 8. Graphs (basic BFS/DFS) [ ]
