@@ -18,7 +18,7 @@ public class customStack {
     public customStack(int size) {
         // this constructor should have a empty array initialized everytime the custom stack obj is created. 
         this.data = new int[size];
-
+        // ! thiis is a custom stack with size ; 
     }
 
     public boolean push(int item) {
