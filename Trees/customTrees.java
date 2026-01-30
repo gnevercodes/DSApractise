@@ -1,0 +1,44 @@
+
+import java.util.Scanner;
+
+public class customTrees { // ! Binary Tree. 
+
+    private Node root;
+
+    public customTrees() {
+
+    }
+
+    //Insert Elements:
+    public void populate(Scanner scanner) {
+        System.out.println("enter the root node: ");
+        int value = scanner.nextInt();
+        root = new Node(value);
+        populate(scanner, root);
+    }
+
+    public void populate(Scanner scanner, Node node) {
+        System.out.println("do you want to enter left of " + node.value);
+        boolean left = scanner.nextBoolean();
+        if (left) {
+            System.out.println("enter the value to the left" + node.value);
+            int value = scanner.nextInt();
+            node.left = new Node(value);
+            populate(scanner, node.left);// calling the recursion again. 
+
+        }
+
+    }
+
+    private static class Node {
+
+        int value;
+        Node left;
+        Node right;
+
+        public Node(int value) {
+            this.value = value;
+        }
+    }
+
+}
