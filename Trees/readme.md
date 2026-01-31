@@ -64,3 +64,7 @@ class Node{
 2. if level=i ; then nodes : 2^i
 3. total leaf nodes in PBT : 2^h ;
 4. N=no of leaves , log(n+1) levels atleast.
+
+## Binary Search Tree.
+
+1.
