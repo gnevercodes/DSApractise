@@ -15,4 +15,14 @@
 1. Firstly , it's a complete binary tree meanin all the leaves are being filled.
 2. These are then being efficiently stored in the arrays.
 3. stored as an array , represented as a TREE.
-4.
+
+## Properties:
+
+1. Complete binary Tree.
+2. Every Node is >= the children of the node.(val).
+3. May not be sorted.
+
+## Methods
+
+- upheap method.
+-
