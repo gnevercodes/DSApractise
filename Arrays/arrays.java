@@ -15,7 +15,7 @@ public class arrays {
         // null is a special literal .
         // Each element in array is an object. 
         // so we can say it can be non continuous too.
-        // array is a collection of reference variables
+        // ! array is a collection of reference variables
         int[] arr = new int[5];
         java.util.Scanner in = new java.util.Scanner(System.in);
         for (int i = 0; i < 5; i++) {
