@@ -34,4 +34,9 @@ public class customHeap<T extends Comparable> {
         list.add(value);
         upheap(list.size() - 1);
     }
+
+    public static void main(String[] args) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+    }
 }
