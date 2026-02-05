@@ -325,3 +325,255 @@
 
 ➡️ Start **NeetCode 150** after completing this checklist  
 ➡️ Focus on **patterns**, not problem count
+
+## Important TC's :
+
+# 📌 Data Structures – Important Time & Space Complexities (Java)
+
+> Purpose: Quick interview revision + strong intuition  
+> Focus: Most-used operations & their complexities  
+> Language: Java (but concepts are language-agnostic)
+
+---
+
+## 📦 Arrays
+
+### Operations
+
+| Operation              | Time Complexity |
+| ---------------------- | --------------- |
+| Access by index        | O(1)            |
+| Search                 | O(n)            |
+| Insert (end)           | O(1) amortized  |
+| Insert/Delete (middle) | O(n)            |
+
+### Space
+
+- O(n)
+
+### Interview Notes
+
+- Contiguous memory
+- Shifting elements makes insert/delete expensive
+- Used heavily in sliding window & two-pointer problems
+
+---
+
+## 🔤 Strings (Java)
+
+### Operations
+
+| Operation            | Time Complexity |
+| -------------------- | --------------- |
+| Access charAt        | O(1)            |
+| Concatenation (`+`)  | O(n)            |
+| StringBuilder append | O(1) amortized  |
+
+### Space
+
+- O(n)
+
+### Interview Notes
+
+- Strings are **immutable**
+- Prefer `StringBuilder` in loops
+
+---
+
+## 🔗 Linked List
+
+### Operations
+
+| Operation                  | Time Complexity |
+| -------------------------- | --------------- |
+| Insert/Delete (given node) | O(1)            |
+| Search                     | O(n)            |
+| Access by position         | O(n)            |
+
+### Space
+
+- O(n)
+
+### Interview Notes
+
+- No random access
+- Used in fast/slow pointer problems
+
+---
+
+## 📚 Stack
+
+### Operations
+
+| Operation | Time Complexity |
+| --------- | --------------- |
+| Push      | O(1)            |
+| Pop       | O(1)            |
+| Peek      | O(1)            |
+
+### Space
+
+- O(n)
+
+### Interview Notes
+
+- LIFO
+- Used in recursion, parsing, monotonic stack problems
+
+---
+
+## 🚶 Queue
+
+### Operations
+
+| Operation | Time Complexity |
+| --------- | --------------- |
+| Enqueue   | O(1)            |
+| Dequeue   | O(1)            |
+| Peek      | O(1)            |
+
+### Space
+
+- O(n)
+
+### Interview Notes
+
+- FIFO
+- BFS, sliding window, producer–consumer
+
+---
+
+## 🔑 HashMap / HashSet
+
+### Operations
+
+| Operation          | Average | Worst |
+| ------------------ | ------- | ----- |
+| Get / Put / Remove | O(1)    | O(n)  |
+
+### Space
+
+- O(n)
+
+### Interview Notes
+
+- Depends on `hashCode()` & `equals()`
+- Collision handling via buckets
+- MOST IMPORTANT DS in interviews
+
+---
+
+## 🌳 Trees (Binary Tree / BST)
+
+### Traversals
+
+| Traversal                      | Time |
+| ------------------------------ | ---- |
+| Inorder / Preorder / Postorder | O(n) |
+
+### Operations (BST)
+
+| Operation       | Average  | Worst |
+| --------------- | -------- | ----- |
+| Search / Insert | O(log n) | O(n)  |
+
+### Space
+
+- O(n)
+
+### Interview Notes
+
+- Height matters
+- Recursion = stack space
+
+---
+
+## ⛰ Heap (Priority Queue)
+
+### Operations
+
+| Operation | Time     |
+| --------- | -------- |
+| Insert    | O(log n) |
+| Remove    | O(log n) |
+| Peek      | O(1)     |
+
+### Space
+
+- O(n)
+
+### Interview Notes
+
+- Complete binary tree
+- Used in Top-K & scheduling problems
+
+---
+
+## 🕸 Graphs
+
+### Traversals
+
+| Algorithm | Time     |
+| --------- | -------- |
+| BFS       | O(V + E) |
+| DFS       | O(V + E) |
+
+### Space
+
+- O(V + E)
+
+### Interview Notes
+
+- Use visited set/array
+- Adjacency list preferred
+
+---
+
+## 🔍 Searching Algorithms
+
+| Algorithm     | Time     |
+| ------------- | -------- |
+| Linear Search | O(n)     |
+| Binary Search | O(log n) |
+
+---
+
+## 🔃 Sorting Algorithms
+
+| Algorithm      | Best       | Average    | Worst      |
+| -------------- | ---------- | ---------- | ---------- |
+| Bubble Sort    | O(n)       | O(n²)      | O(n²)      |
+| Insertion Sort | O(n)       | O(n²)      | O(n²)      |
+| Merge Sort     | O(n log n) | O(n log n) | O(n log n) |
+| Quick Sort     | O(n log n) | O(n log n) | O(n²)      |
+
+---
+
+## 🧠 Recursion
+
+### Time
+
+- Depends on recursion tree
+
+### Space
+
+- O(depth of recursion)
+
+### Interview Notes
+
+- Always identify base case
+- Stack overflow risk
+
+---
+
+## 🎯 Final Interview Tip
+
+If stuck:
+
+- Count loops
+- Identify DS used
+- Explain reasoning out loud
+
+Understanding **why** > memorizing **what**
+
+---
