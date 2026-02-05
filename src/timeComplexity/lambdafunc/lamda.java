@@ -15,9 +15,16 @@ public class lamda {
         Consumer<Integer> fun = (item) -> System.out.println(item * 2);
 
         arr.forEach(fun);
+        lamda one = new lamda();
+        one.go();
     }
 
     int sum(int a, int b) {
         return a + b;
+    }
+
+    @Deprecated
+    public void go() {
+        System.out.println("annotations example on : Depricated ");
     }
 }

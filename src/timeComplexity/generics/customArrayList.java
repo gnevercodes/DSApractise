@@ -2,37 +2,45 @@ package timeComplexity.generics;
 
 import java.util.Arrays;
 
-public class customGenericArrayList<T> {
+public class customArrayList {
 
-    private Object[] data;
-    private static int DEFAULT_SIZE = 10;
+    private int[] data; // this is an array here. 
+    private final static int DEFAULT_SIZE = 10; // static default size. 
     private int size = 0; // also works as index value. 
 
-    // public customArrayList() {
-    //     this.data = new Object[DEFAULT_SIZE];
-    // }
-    public void add(T num) {
+    public customArrayList() {
+        this.data = new int[DEFAULT_SIZE];
+
+    }
+
+    public void add(int num) {
         // add edge case
         if (this.isFull()) {
             resize(); // these two methods are edge cases . 
         }
-        data[size++] = num;
+        data[size++] = num; // * post increment 
+        /*
+        data[size]= num; 
+        size+=1; 
+         */
     }
 
     private boolean isFull() {
-        return size == data.length;
+        return size == data.length; // returns a boolean if full:TRUE,not full:FALSE
     }
 
     private void resize() {
-        Object[] temp = new Object[data.length * 2];
+        int[] temp = new int[data.length * 2];
         for (int i = 0; i < data.length; i++) {
-            temp[i] = (T) data[i];
+            temp[i] = data[i];
         }
         data = temp; // temp is garbage collection . 
     }
 
     public int remove() {
-        Object removedItem = data[--size];
+        int removedItem = data[--size];
+        // size=size-1; 
+        // int removeditem= data[size]; 
         return removedItem;
     }
 
@@ -55,12 +63,14 @@ public class customGenericArrayList<T> {
     //     }
     //     System.out.println("]");
     // }
-    // public void display() {
-    //     System.out.print("[");
-    //     for (int i : data) {
-    //         System.out.print(data[i] + ",");
-    //     }
-    // }
+    public void display() {
+        System.out.print("[");
+        for (int i : data) {
+            System.out.print(data[i] + ",");
+        }
+        System.out.println("]");
+    }
+
     public static void main(String[] args) {
         customArrayList list = new customArrayList();
 
