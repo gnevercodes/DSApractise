@@ -23,12 +23,11 @@ public class access {
 
     public static void main(String[] args) {
         access one = new access();
-        System.out.println(one instanceof Object);
+        System.out.println(one instanceof access);
     }
 
-    @Override
-    protected void finalize() throws Throwable {
-        super.finalize();
-    }
-
+    // @Override
+    // protected void finalize() throws Throwable {
+    //     // super.finalize();
+    // }
 }

@@ -22,3 +22,17 @@ abstract public class abstractInterfaces {
     }
 
 }
+
+class abstractTutorial extends abstractInterfaces {
+
+    @Override
+    public void career(String name) {
+        System.out.println("the name is" + name);
+
+    }
+
+    @Override
+    public void partner(String name, int age) {
+        System.out.println("the name is" + name + " and his/her age is" + age);
+    }
+}
