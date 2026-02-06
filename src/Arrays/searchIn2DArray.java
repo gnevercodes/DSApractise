@@ -30,5 +30,13 @@ public class searchIn2DArray {
 
         }
         return -1;
+
+        // for (int[] row : arr) {
+        //     for (int val : row) {
+        //         if (val == target) {
+        //             System.out.println("Found!");
+        //         }
+        //     }
+        // }
     }
 }

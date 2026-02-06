@@ -15,8 +15,8 @@ public class searchInRange {
             return false;
         }
         for (int index = start; index <= end; index++) {
-            int element = arr[index];
-            if (element == target) {
+            // int element = arr[index];
+            if (arr[index] == target) {
                 return true;
             }
         }
