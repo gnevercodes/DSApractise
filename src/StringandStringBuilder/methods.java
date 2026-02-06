@@ -8,6 +8,8 @@ public class methods {
 
         String name = "ganesh hello he says ";
         System.out.println(Arrays.toString(name.toCharArray()));
+//         char[] = ['G','a','n','e','s','h']    // physical array
+// Arrays.toString(char[]) = "[G, a, n, e, s, h]" // string snapshot of the array
         // ! methods create new object and applies those methods.
         System.out.println(name.indexOf('a'));
         System.out.println("     ganesh  ".strip()); // ? white space is removed. 
