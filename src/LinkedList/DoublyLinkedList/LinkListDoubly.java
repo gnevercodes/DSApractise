@@ -1,4 +1,4 @@
-
+// code 
 public class LinkListDoubly {
 
     NodedoubleL head = null;
