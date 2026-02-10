@@ -106,3 +106,51 @@ Index 3 → TreeNode (Red-Black Tree)
 - equalus()
   - slow , compares actual content, final for equal check.
     -Same hashCode() ≠ equals true (collision allowed)
+
+# HashMap.
+
+1. stores key value pairs
+2. No order guaranteed.
+3. allows `one null key and multiple null values`.
+4. not thread safe : Not Synchronized.
+5. TC : O(1) for get / put , worst case is O(n) for traversal and hash collison.
+6. Internally : it uses **array Buckets + LinkedList / Tree**.
+
+```java
+Map<String, Integer> map = new HashMap<>();
+map.put("Alice", 90);
+map.put("Bob", 85);
+map.put(null, 100);
+System.out.println(map); // order is unpredictable
+```
+
+# LinkedHashMap
+
+1. maintains insertion order.
+2. One null key , multiple null values.
+3. not thread safe.
+4. TC : O(1) get/put average.
+5. internalls : Hashmap + Double linkedLIst.
+
+```java
+LinkedHashMap<String, Integer> linkedMap = new LinkedHashMap<>();
+linkedMap.put("Alice", 90);
+linkedMap.put("Bob", 85);
+linkedMap.put("Charlie", 95);
+System.out.println(linkedMap); // prints in insertion order
+```
+
+# TreeMap:
+
+1. Sorted order of keys .
+2. no null keys allowed.
+3. multiple null values.
+4. O(logn) for get/put (uses RedBlack Tree internally).
+
+# HashTable
+
+1. legacyclass.
+2. synchronized.
+3. No null keys or null values.
+4. O(1)
+5. Internals : SImilar to hashmap.
