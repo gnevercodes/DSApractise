@@ -47,6 +47,8 @@ class link {
             temp = temp.next;
         }
         Node node = new Node(value, temp.next);
+        temp.next = node;
+        size++;
 
     }
 
