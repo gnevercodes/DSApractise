@@ -1,7 +1,6 @@
 
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Deque;
 
 public class inbuiltExamples {
 
@@ -22,7 +21,7 @@ public class inbuiltExamples {
         queue.add(19);
         System.out.println(queue.peek());
         System.out.println(queue.remove());
-        Deque<Integer> deque = new ArrayDeque<>();
+        // Deque<Integer> deque = new ArrayDeque<>();
 
     }
 }
