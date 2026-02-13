@@ -11,6 +11,7 @@ public class App {
         map.get("Ganesh");
         map.containsKey("Alice");
         map.remove("Ganesh");
+
         // ! HashMap uses an array of buckets, and each bucket stores entries as a LinkedList or Tree based on hash collisions.
         /*
         ! Important points
@@ -19,7 +20,6 @@ public class App {
         * allows one null key. 
         * not ordered. 
          */
-
         // !  HashTable. 
         HashSet<Integer> set = new HashSet<>();
         set.add(10);
