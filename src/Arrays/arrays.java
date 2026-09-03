@@ -1,14 +1,15 @@
 
 import java.util.Arrays;
+import java.util.InputMismatchException;
 
 public class arrays {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InputMismatchException {
 
         // syntax
-        // declaration of an array ; (CompileTime)
-        // name is getting defined in the stack . 
-        //  Declaration object is created in heap and then being assigned. (RunTime) // dynamic memory allocation(allocation at runtime)
+        // ! declaration of an array ; (! CompileTime)
+        // * name is getting defined in the stack . 
+        // # Declaration object is created in heap and then being assigned. (RunTime) // dynamic memory allocation(allocation at runtime)
         // [ , , , , , , , , , ] continuous mem location ( JVM decides it)
         // heap objects are not continuous . 
         // DMA arraay obj in java may not be continuous .
@@ -18,19 +19,15 @@ public class arrays {
         // ! array is a collection of reference variables
         int[] arr = new int[5];
         java.util.Scanner in = new java.util.Scanner(System.in);
-        for (int i = 0; i < 5; i++) {
-            arr[i] = in.nextInt();
+        // for (int i = 0; i < 5; i++) {
+        //     arr[i] = in.nextInt();
 
-        }
-
-        System.out.println(Arrays.toString(arr));
-
-        String[] str = new String[4];
-        for (int i = 0; i < str.length; i++) {
-            str[i] = in.next();
-
-        }
-
+        // }
+        // System.out.println(Arrays.toString(arr));
+        // String[] str = new String[4];
+        // for (int i = 0; i < str.length; i++) {
+        //     str[i] = in.next();
+        // }
         // string are immutable , arrays are mutable. 
         // 2D arrays 
         int[][] twoarr = {

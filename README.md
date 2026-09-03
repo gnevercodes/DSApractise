@@ -53,12 +53,12 @@ Map
 
 ## TODO:
 
-1. Arrays [X]
-2. Strings [X]
-3. ArrayList [X] - custom implementation , generic todo
-4. HashMap / HashSet [X]
-5. Stack & Queue [X] - // TODO: Circular.
-6. Linked List [X] - single LL[X],doubly[ ],circular[ ] .
+1. Arrays []
+2. Strings []
+3. ArrayList [] - custom implementation , generic todo
+4. HashMap / HashSet []
+5. Stack & Queue [] - // TODO: Circular.
+6. Linked List [] - single LL[],doubly[ ],circular[ ] .
 7. Trees (BST, Heap) [ ]
 8. Graphs (basic BFS/DFS) [ ]
 
